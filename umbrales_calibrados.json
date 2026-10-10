@@ -1,0 +1,11 @@
+{
+  "tau1": 0.2,
+  "tau2": 0.25,
+  "costo_esperado": 46.88,
+  "costos": {
+    "Ce": 1200.0,
+    "Cb": 600.0,
+    "Cr": 15.0
+  },
+  "fuente": "validaci\u00f3n (dataset SINT\u00c9TICO)"
+}

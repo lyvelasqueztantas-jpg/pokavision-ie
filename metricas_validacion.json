@@ -1,0 +1,262 @@
+{
+  "modelo": "Etapa 1: umbral de anomalía aprendido de conformes · Etapa 2: Random Forest (300 árboles), descriptores geométricos + HOG",
+  "umbral_anomalia": 52.63,
+  "tau1": 0.2,
+  "tau2": 0.25,
+  "costo_esperado_val": 46.88,
+  "dataset": "SINTÉTICO (data/dataset/resumen_dataset.json)",
+  "imagenes": {
+    "train": 704,
+    "val": 128,
+    "test": 128
+  },
+  "val": {
+    "por_clase": {
+      "rayadura": {
+        "VP": 16,
+        "FP": 0,
+        "FN": 4,
+        "precision": 1.0,
+        "recall": 0.8,
+        "f1": 0.889
+      },
+      "pintura_irregular": {
+        "VP": 16,
+        "FP": 0,
+        "FN": 5,
+        "precision": 1.0,
+        "recall": 0.762,
+        "f1": 0.865
+      },
+      "soldadura_visible": {
+        "VP": 19,
+        "FP": 19,
+        "FN": 1,
+        "precision": 0.5,
+        "recall": 0.95,
+        "f1": 0.655
+      }
+    },
+    "global": {
+      "precision": 0.729,
+      "recall": 0.836,
+      "f1": 0.779
+    },
+    "decision": {
+      "matriz": {
+        "VP": 43,
+        "FN": 5,
+        "FP": 0,
+        "VN": 80
+      },
+      "estados": {
+        "LIBERADO": 85,
+        "RETENIDO": 17,
+        "BLOQUEADO": 26
+      },
+      "imagenes": 128,
+      "sensibilidad_K05": 0.896,
+      "falsas_alarmas_K06": 0.0,
+      "bloqueo_correcto_K07": 0.963,
+      "exactitud": 0.961,
+      "kappa": 0.915
+    },
+    "por_modelo": {
+      "M01": {
+        "VP": 11,
+        "FN": 1,
+        "FP": 0,
+        "VN": 20,
+        "sensibilidad": 0.917,
+        "falsas_alarmas": 0.0
+      },
+      "M02": {
+        "VP": 10,
+        "FN": 2,
+        "FP": 0,
+        "VN": 20,
+        "sensibilidad": 0.833,
+        "falsas_alarmas": 0.0
+      },
+      "M03": {
+        "VP": 11,
+        "FN": 1,
+        "FP": 0,
+        "VN": 20,
+        "sensibilidad": 0.917,
+        "falsas_alarmas": 0.0
+      },
+      "M04": {
+        "VP": 11,
+        "FN": 1,
+        "FP": 0,
+        "VN": 20,
+        "sensibilidad": 0.917,
+        "falsas_alarmas": 0.0
+      }
+    },
+    "matriz_confusion_clase": {
+      "etiquetas": [
+        "conforme",
+        "rayadura",
+        "pintura_irregular",
+        "soldadura_visible"
+      ],
+      "valores": [
+        [
+          80,
+          0,
+          0,
+          0
+        ],
+        [
+          4,
+          12,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          14,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          16
+        ]
+      ]
+    },
+    "tiempo_inferencia_ms": {
+      "promedio": 76.5,
+      "p95": 180.6
+    }
+  },
+  "test": {
+    "por_clase": {
+      "rayadura": {
+        "VP": 19,
+        "FP": 1,
+        "FN": 0,
+        "precision": 0.95,
+        "recall": 1.0,
+        "f1": 0.974
+      },
+      "pintura_irregular": {
+        "VP": 19,
+        "FP": 3,
+        "FN": 0,
+        "precision": 0.864,
+        "recall": 1.0,
+        "f1": 0.927
+      },
+      "soldadura_visible": {
+        "VP": 17,
+        "FP": 12,
+        "FN": 3,
+        "precision": 0.586,
+        "recall": 0.85,
+        "f1": 0.694
+      }
+    },
+    "global": {
+      "precision": 0.775,
+      "recall": 0.948,
+      "f1": 0.853
+    },
+    "decision": {
+      "matriz": {
+        "VP": 47,
+        "FN": 1,
+        "FP": 2,
+        "VN": 78
+      },
+      "estados": {
+        "LIBERADO": 79,
+        "RETENIDO": 15,
+        "BLOQUEADO": 34
+      },
+      "imagenes": 128,
+      "sensibilidad_K05": 0.979,
+      "falsas_alarmas_K06": 0.025,
+      "bloqueo_correcto_K07": 1.0,
+      "exactitud": 0.977,
+      "kappa": 0.95
+    },
+    "por_modelo": {
+      "M01": {
+        "VP": 12,
+        "FN": 0,
+        "FP": 0,
+        "VN": 20,
+        "sensibilidad": 1.0,
+        "falsas_alarmas": 0.0
+      },
+      "M02": {
+        "VP": 11,
+        "FN": 1,
+        "FP": 0,
+        "VN": 20,
+        "sensibilidad": 0.917,
+        "falsas_alarmas": 0.0
+      },
+      "M03": {
+        "VP": 12,
+        "FN": 0,
+        "FP": 0,
+        "VN": 20,
+        "sensibilidad": 1.0,
+        "falsas_alarmas": 0.0
+      },
+      "M04": {
+        "VP": 12,
+        "FN": 0,
+        "FP": 2,
+        "VN": 18,
+        "sensibilidad": 1.0,
+        "falsas_alarmas": 0.1
+      }
+    },
+    "matriz_confusion_clase": {
+      "etiquetas": [
+        "conforme",
+        "rayadura",
+        "pintura_irregular",
+        "soldadura_visible"
+      ],
+      "valores": [
+        [
+          78,
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          16,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          16,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          14
+        ]
+      ]
+    },
+    "tiempo_inferencia_ms": {
+      "promedio": 70.5,
+      "p95": 169.6
+    }
+  },
+  "segundos_entrenamiento": 172.3
+}

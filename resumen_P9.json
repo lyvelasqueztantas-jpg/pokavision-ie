@@ -1,0 +1,34 @@
+{
+  "filas": 1250,
+  "porcentaje_real": 0.0,
+  "porcentaje_sintetico": 100.0,
+  "no_conformes": 140,
+  "td": 11.2,
+  "pruebas": {
+    "estado_binomial_p012": {
+      "p_valor": 0.4083,
+      "resultado": "PASA"
+    },
+    "tipo_chi2_pareto": {
+      "observado": {
+        "Rayadura": 40,
+        "Pintura irregular": 44,
+        "Soldadura visible": 23,
+        "Deformación de láminas": 15,
+        "Desalineación de componentes": 18
+      },
+      "p_valor": 0.1616,
+      "resultado": "PASA"
+    },
+    "costo_KS_normal_600_60": {
+      "D": 0.0716,
+      "p_valor": 0.4495,
+      "resultado": "PASA"
+    },
+    "tiempo_KS_normal_180_25": {
+      "D": 0.0264,
+      "p_valor": 0.3424,
+      "resultado": "PASA"
+    }
+  }
+}

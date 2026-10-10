@@ -1,0 +1,10 @@
+﻿ID_caja,Lote,Modelo,Fase,Vista,Archivo,Condicion,Resultado_esperado,Origen_dato
+CAJ-2026-0901,L2026-DEMO,M01,carcasa_planchada,frontal,demo_pintura_M01.jpg,pintura_irregular,BLOQUEADO (R3),SINTÉTICO
+CAJ-2026-0902,L2026-DEMO,M02,carcasa_planchada,lateral,demo_rayadura_M02.jpg,rayadura,BLOQUEADO (R3) o RETENIDO (R4),SINTÉTICO
+CAJ-2026-0903,L2026-DEMO,M03,carcasa_planchada,frontal,demo_soldadura_M03.jpg,soldadura_visible,RETENIDO (R6),SINTÉTICO
+CAJ-2026-0904,L2026-DEMO,M04,carcasa_planchada,frontal,demo_conforme_M04.jpg,conforme,LIBERADO (R5),SINTÉTICO
+CAJ-2026-0905,L2026-DEMO,M03,carcasa_planchada,lateral,demo_conforme_M03_lateral.jpg,conforme,LIBERADO (R5),SINTÉTICO
+CAJ-2026-0906,L2026-DEMO,M01,producto_terminado,frontal,demo_terminado_M01.jpg,conforme,LIBERADO (R5): cerradura excluida del ROI,SINTÉTICO
+CAJ-2026-0907,L2026-DEMO,M02,carcasa_planchada,frontal,demo_borrosa.jpg,conforme,RETENIDO (R1),SINTÉTICO
+CAJ-2026-0908,L2026-DEMO,M01,carcasa_planchada,lateral,demo_oscura.jpg,conforme,RETENIDO (R1),SINTÉTICO
+caja 15,,M04,carcasa_planchada,frontal,demo_conforme_M04.jpg,metadatos incompletos,RETENIDO (R2),SINTÉTICO
